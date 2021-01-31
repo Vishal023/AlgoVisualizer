@@ -1,0 +1,26 @@
+@import "variable";
+.Toolbar{
+  padding: .5rem;
+  background-color: $red;
+  &-item{
+    width: 100%;
+    padding: .7rem;
+    margin: .3rem;
+    border: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: $font-sm;
+    text-align: left;
+    outline: none;
+    border-radius: 7px;
+    background-color: $black;
+    color: $white;
+    transition: .3s ease-in-out;
+  }
+  &-item:hover{
+    cursor: pointer;
+  }
+  &-item:active{
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,18 @@
+@import "variable";
+.VisualizeBar{
+  padding: .5rem;
+  margin: .5rem;
+  &-container{
+    .Bar{
+      width: 50px;
+      background-color: #941c2f;
+      span{
+        color: $white;
+        font-size: $font-sm;
+      }
+    }
+  }
+  .active{
+    background-color: #ADE25D;
+  }
+}

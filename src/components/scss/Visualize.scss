@@ -1,0 +1,63 @@
+@import "variable";
+.Visualize {
+/*  height: calc(85vh - 56px);*/
+  font-family: sans-serif;
+  &-container {
+    .Algo {
+      padding: 0.875rem;
+      text-align: left;
+      color: $black;
+      background-color: #f3f4f5;
+      &-head {
+        padding: 3px;
+        h3 {
+          font-size: $font-lg;
+        }
+      }
+      &-desc {
+        padding: 3px;
+        p {
+          font-size: $font-med;
+        }
+      }
+    }
+  }
+  .List{
+    &-items{
+      flex-basis: 15%;
+      background-color: $blue;
+      border-radius: 3px;
+      color: $white;
+      text-align: center;
+      padding: .5rem;
+      margin: .5rem;
+      font-size: $font-med;
+      animation: appear linear;
+      animation-duration: 1s;
+    }
+    @keyframes appear {
+      0%{
+        position: relative;
+        top: 20px;
+        opacity: 0;
+      }
+      75%{
+        opacity: 0.5;
+      }
+      100%{
+        position: relative;
+        opacity: 1;
+        top: 0;
+      }
+    }
+  }
+  &-popup{
+    background-color: $black;
+    color: $white;
+    width: 100%;
+    padding: 1.2rem;
+    font-size: $font-med;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
+}
